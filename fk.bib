@@ -6,10 +6,16 @@
 %
 % Conferences and events are in
 % \include{events.bib}
+%
+% Install (symlink) these files in 
+%   /usr/share/texmf-texlive/bibtex/bib/users
+% Then run 
+%   sudo texhash /usr/share/texmf-texlive
+
 
 %%%%%%% F %%%%%%%
 
-@unpublished{   fk:lfsa10,
+@misc{          fk:lfsa10,
   author        = "Florent Kirchner and Grant Passmore",
   title         = "Thinking Outside the (Arithmetic) Box: Certifying RAHD Computations",
   year          = 2010,
@@ -1047,6 +1053,23 @@
   year 		= 1998,
 }
 
+@unpublished{   CatLog:Mellies10,
+  author        = "Paul-Andr\'e Melli\`es",
+  title         = "Categorical Semantics of Linear Logic",
+  note          = "Preliminary book chapter",
+  year          = 2010,
+}
+
+@inproceedings{ CatSem:Mellies10,
+  author        = "Paul-Andr\'e Melli\`es",
+  title         = "Segal condition meets computational effects",
+  booktitle     = lics2010,
+  publisher     = IEEECSP,
+  year          = 2010,
+  note          = "To appear",
+}
+
+
 
 %%%%%%% Rewriting %%%%%%%
 
@@ -1302,6 +1325,29 @@
   address       = "Philadelphia, USA",
 }
 
+@inproceedings{	Poly:BoldoM06,
+  author 	= "Sylvie Boldo and C\'esar Mu{\~{n}}oz",
+  title 	= "Provably Faithful Evaluation of Polynomials",
+  booktitle 	= "Proc. 21st ACM Symp. on Applied Computing",
+  pages 	= "1328--1332",
+  editor 	= "Hisham Haddad",
+  publisher	= ACMP,
+  year 		= 2006,
+}
+
+@inproceedings{	Poly:DaumasRT01,
+  title 	= "A Generic Library for Floating-Point Numbers and its Application to Exact Computing",
+  author 	= "Marc Daumas and Laurence Rideau and Laurent Th{\'e}ry",
+  booktitle 	= tphol01,
+  publisher 	= SV,
+  year 		= 2001,
+  volume 	= "2152",
+  editor 	= "Richard Boulton and Paul Jackson",
+  pages 	= "169--184",
+  series 	= lncs,
+  address       = "Heidelberg",
+}
+
 
 %%%%%%% PCC %%%%%%%
 
@@ -1378,6 +1424,21 @@
   edition       = "corrected 2nd printing",
   publisher     = SV,
   year          = 1999 ,
+}
+
+@misc{		Hybrid:Tiwari04,
+  title 	= "Abstractions for Hybrid Systems",
+  author 	= "Ashish Tiwari",
+  year 		= 2004,
+  month 	= jun # "~16",
+}
+
+@inproceedings{ CFM:Appel08,
+  author        = "Andrew Appel",
+  title         = "Foundational High-level Static Analysis",
+  year          = "2008",
+  booktitle     = "Exploiting Concurrency Efficiently and Correctly ($\text{(EC)}^2$) Workshop",
+  publisher     = "Informal Proceedings",
 }
 
 
@@ -1532,6 +1593,7 @@ not-not translation:
   year 		= 2001,
 }
 
+
 %%%%%%% Tactics and Strategies %%%%%%%
 
 @inproceedings{	Tac:Jojgov03,
@@ -1596,13 +1658,6 @@ not-not translation:
   series 	= "IFIP Transactions",
 }
 
-@proceedings{	Strat:Strategies06,
-  title		= "Proc. 6th Int. Workshop on Strategies in Automated Deduction",
-  editor	= "Myla Archer and Thierry {Boy de la Tour} and C\'esar Mu{\~{n}}oz",
-  year		= 2006,
-  month		= aug,
-}
-
 @article{	Strat:Archer00,
   title 	= "{TAME}: Using {PVS} strategies for special-purpose theorem proving",
   author 	= "Myla Archer",
@@ -1613,11 +1668,10 @@ not-not translation:
   pages 	= "139--181",
 }
 
-@inproceedings{	Strat:CoenTZ07,
+@article{	Strat:CoenTZ07,
   title 	= "Tinycals: Step by Step Tacticals",
   author 	= "Claudio Sacerdoti Coen and Enrico Tassi and Stefano Zacchiroli",
-  booktitle     = "Proc. 7th Workshop on User Interfaces for Theorem Provers",
-  series 	= entcs,
+  journal       = entcs,
   address       = "Amsterdam",
   publisher	= ES,
   year 		= 2007,
@@ -1651,6 +1705,44 @@ not-not translation:
 		 the 7th International Workshop on the Implementation of
 		 Logics, Doha, Qatar, November 22, 2008",
   URL = "http://ceur-ws.org/Vol-418/paper5.pdf",
+
+@inproceedings{ Tac:AspinallDL08,
+  author        = "David Aspinall and Ewen Denney and Christoph Lüth",
+  title         = "A Tactic Language for {H}iproofs",
+  booktitle     = "Proc. 7th Intl. Conference on Mathematical Knowledge Management",
+  pages         = "339--354",
+  volume        = "5144",
+  publisher     = SV,
+  series        = lncs,
+  address       = "Heidelberg",
+  year          = 2008,
+}
+
+@inproceedings{ Tac:AspertiRST09,
+  author        = "Andrea Asperti and Wilmer Ricciotti and Claudio Sacerdoti Coen and Enrico Tassi",
+  title         = "A new type for tactics",
+  booktitle     = "Proc. ACM SIGSAM Intl. Workshop on Programming Languages for Mechanized Mathematics Systems",
+  pages         = "22--29",
+  year          = 2009,
+}
+
+@inproceedings{ Tac:Spiwack10,
+  title         = "An abstract type for constructing tactics in Coq",
+  author        = "Arnaud Spiwack",
+  booktitle     = "Proc. 3rd Intl. Workshop on Proof-search in Type Theories",
+  year          = 2010,
+  abstract      = "The Coq proof assistant is a large development, a lot of
+  which happens to be more or less dependent on the type of tactics. To be
+  able to perform tweaks in this type more easily in the future, we propose an
+  API for building tactics which doesn't need to expose the type of tactics
+  and yet has a fairly small amount of primitives. This API accompanies an
+  entirely new implementation of the core tactic engine of Coq which aims at
+  handling more gracefully existential variables (aka. metavariables) in
+  proofs - like in more recent proof assistants like Matita and Agda2. We
+  shall, then, leverage this newly acquired independence of the concrete type
+  of tactics from the API to add backtracking abilities.",
+}
+
 
 
 %%%%%%% Coq %%%%%%%
@@ -1934,7 +2026,7 @@ not-not translation:
   year          = "1996",
 }
 
-@article{ACL2:KaufmannM97,
+@article{       ACL2:KaufmannM97,
   title 	= "An Industrial Strength Theorem Prover for a Logic Based on Common Lisp",
   author 	= "Matt Kaufmann and J Strother Moore",
   journal 	= "IEEE Transactions on Software Engineering",
@@ -1957,7 +2049,7 @@ not-not translation:
   year      	= 2003,
 }
 
-@inproceedings{Stratego:Visser01,
+@inproceedings{ Stratego:Visser01,
   author 	= "Eelco Visser",
   title 	= "Stratego: A Language for Program Transformation Based on Rewriting Strategies",
   series 	= lncs,
@@ -2163,7 +2255,7 @@ not-not translation:
   year 		= 1986,
 }
 
-@inproceedings{conf/cav/DutertreM06,
+@inproceedings{ yices:DutertreM06,
   title         = "A Fast Linear-Arithmetic Solver for {DPLL}({T})",
   author        = "Bruno Dutertre and Leonardo Mendon{\c c}a de Moura",
   pages         = "81--94",
@@ -2211,343 +2303,7 @@ not-not translation:
 }
 
 
-%%%%%%% Programming Languages %%%%%%%
-
-@book{		Fortran66,
-  author 	= "{ANSI}",
-  title 	= "Programming language, {Fortran}: {X3.9-1966}",
-  publisher 	= ANSI,
-  year 		= 1966,
-  series 	= "FIPS Publication",
-}
-
-@book{		C89,
-  author 	= "{ANCI}",
-  title 	= "Programming language, {C}: {X3.159-1989}",
-  number 	= "160",
-  publisher 	= ANSI,
-  year 		= 1989,
-  series 	= "FIPS Publication",
-}
-
-@book{		Lisp96,
-  author 	= "{ANSI}",
-  title 	= "Programming language, {Common LISP}: {X3.226-1994}",
-  publisher 	= ANSI,
-  year 		= 1996,
-  series 	= "FIPS Publication",
-}
-
-@manual{	Ocaml03,
-  title 	= "The {Objective Caml} system, Documentation and user's manual",
-  author 	= "Xavier Leroy and Damien Doligez and Jacques Garrigue and Didier R\'emy and J\'er\^ome Vouillon)",
-  edition 	= "release 3.07",
-  year 		= 2003,
-}
-
-@inproceedings{	Epigram:McBride04,
-  title 	= "Epigram: Practical Programming with Dependent Types",
-  author 	= "Conor McBride",
-  publisher 	= SV,
-  year 		= 2004,
-  volume 	= 3622,
-  booktitle 	= "Advanced Functional Programming",
-  editor 	= "Varmo Vene and Tarmo Uustalu",
-  pages 	= "130--170",
-  series 	= lncs,
-  address       = "Heidelberg",
-}
-
-%%%%%%% Agent Software %%%%%%%
-
-@article{	OAA:MartinCM99,
-  author	= "David Martin and Adam Cheyer and Douglas Moran",
-  title		= "The Open Agent Architecture: A Framework for Building Distributed Software
-     Systems",
-  journal	= "Applied Artificial Intelligence",
-  pages		= "91--128",
-  month		= jan,
-  number	= "1--2",
-  volume	= "13",
-  year		= 1999,
-}
-
-@inproceedings{	LBA:ArmandoZ00,
-  title 	= "Towards Interoperable Mechanized Reasoning Systems: the Logic Broker Architecture",
-  author 	= "Alessandro Armando and Daniele Zini",
-  booktitle 	= "{WOA} 2000: Dagli Oggetti agli Agenti. 1st {AI}*{IA}/{TABOO} Joint Workshop {"}From Objects to Agents{"}: Evolutive Trends of Software Systems",
-  publisher 	= "Pitagora Editrice Bologna",
-  year 		= 2000,
-  editor 	= "Antonio Corradi and Andrea Omicini and Agostino Poggi",
-  pages 	= "70--75",
-}
-
-@article{	ETI:SteffenMB97,
-  title 	= "The Electronic Tool Integration Platform: Concepts and Design",
-  author 	= "Bernhard Steffen and Tiziana Margaria and Volker Braun",
-  journal 	= sttt,
-  year 		= 1997,
-  number 	= "1-2",
-  volume 	= "1",
-  pages 	= "9--30",
-}
-
-@article{	PROSPER:DennisCNBSM03,
-  title 	= "The {PROSPER} toolkit",
-  author 	= "Louise Dennis and Graham Collins and Michael Norrish and Richard Boulton and Konrad Slind and Thomas Melham",
-  journal 	= sttt,
-  year 		= 2003,
-  number 	= "2",
-  volume 	= "4",
-  pages 	= "189--210",
-}
-
-
-%%%%%%% Model Checking %%%%%%%
-
-@inproceedings{	ModelCheck:ClarkeGJLV00,
-  title 	= "Counterexample-Guided Abstraction Refinement",
-  author 	= "Edmund Clarke and Orna Grumberg and Somesh Jha and Yuan Lu and Helmut Veith",
-  booktitle 	= "Computer Aided Verification, 12th International Conference, {CAV} 2000",
-  publisher 	= SV,
-  year 		= 2000,
-  volume 	= "1855",
-  editor 	= "E. Allen Emerson and Aravinda Prasad Sistla",
-  pages 	= "154--169",
-  series 	= lncs,
-  address       = "Heidelberg",
-}
-
-@inproceedings{	ModelCheck:SaidiS99,
-  title 	= "Abstract and Model Check While You Prove",
-  author 	= "Hassen Sa{\"i}di and Natarajan Shankar",
-  booktitle 	= "Computer Aided Verification, 11th International Conference, {CAV} '99",
-  publisher 	= SV,
-  year 		= 1999,
-  volume 	= "1633",
-  editor 	= "Nicolas Halbwachs and Doron Peled",
-  pages 	= "443--454",
-  series 	= lncs,
-  address       = "Heidelberg",
-}
-
-@inproceedings{ conf/lfm/BensalemEA00,
-    author      = "Saddek Bensalem and Vijay Ganesh and Yassine Lakhnech and  C{\'e}sar Mu{\~n}oz and Sam Owre and Harald Rue\ss and John Rushby and Vlad Rusu and Hassen Sa{\"i}di and Natarajan Shankar and Eli Singerman and Ashish Tiwari",
-    title       = "An Overview of {SAL}",
-    booktitle   = "{LFM} 2000: Fifth {NASA} Langley Formal Methods Workshop",
-    year        = 2000,
-    editor      = "{C.} Michael Holloway",
-    pages       = "187--196",
-    address     = "Hampton, {VA}",
-    month       = jun,
-    organization = "{NASA} Langley Research Center",
-    url         = "http://www.csl.sri.com/papers/lfm2000/"
-}
-
-@inproceedings{ yu97implementing,
-  author 	= "Shenwei Yu and Zhaohui Luo",
-  title 	= "Implementing a Model Checker for {LEGO}",
-  booktitle 	= "{FME}'97: Industrial Applications and Strengthened Foundations of Formal Methods",
-  volume 	= "1313",
-  publisher 	= SV,
-  editor 	= "John Fitzgerald and Cliff B. Jones and Peter Lucas",
-  pages 	= "442--458",
-  year 	= 1997,
-}
-
-%%%%%%% LaTeX %%%%%%%
-
-@manual{	LaTeX:symb,
-  title 	= "The Great, Big List of \LaTeX\ Symbols",
-  author 	= "David Carlisle and Scott Pakin and Alexander Holt",
-  month 	= feb,
-  year 		= 2001,
-}
-
-@manual{	LaTeX:intro,
-  title 	= "The Not So Short Introduction to \LaTeX2e",
-  author 	= "Tobias Oetiker",
-  month 	= jan,
-  year 		= 1999,
-}
-
-%%%%%%% Sundries %%%%%%%
-@manual{	Tactics:dod01,
-  title		= "Dictionary of Military and Associated Terms",
-  organization	= "United States Departement of Defense",
-  month		= apr,
-  year		= 2001,
-  note		= "Joint Publication 1-02",
-}
-
-@book{		Tactics:Certeau84,
-  title		= "The Practice of Everyday Life",
-  author	= "Michel de Certeau",
-  publisher	= UCP,
-  note		= "translation by Steven Rendall",
-  year		= 1948
-}
-
-@article{	Bio:DanosL04,
-  title 	= "Formal Molecular Biology",
-  author 	= "Vincent Danos and Cosimo Laneve",
-  journal 	= tcs,
-  year 		= 2004,
-  number 	= "1",
-  volume 	= "325",
-  pages 	= "69--110",
-}
-
-@article{	Bio:EkerKLLT02,
-  title 	= "Pathway Logic: Executable Models of Biological Networks",
-  author 	= "Steven Eker and Merrill Knapp and Keith Laderoute and Patrick Lincoln and Carolyn Talcott",
-  journal 	= "Electronic Notes in Theoretical Computer Science",
-  year 		= 2002,
-  volume 	= "71",
-}
-
-@inproceedings{	Space:GluckH02,
-  author 	= "Peter Gluck and Gerard Holzmann",
-  title 	= "Using {Spin} Model Checking for Flight Software Verification",
-  booktitle 	= "Proc. of the 2002 Aerospace Conference",
-  publisher 	= IEEECSP,
-  year 		= 2002,
-  month 	= mar,
-}
-
-@article{ 	Aero:LaurentMW01,
-  author 	= "Odile Laurent and Pierre Michel and Virginie Wiels",
-  title 	= "Using Formal Verification Techniques to Reduce Simulation and Test Effort",
-  journal 	= "Proceedings of FME 2001",
-  volume 	= "2021",
-  pages 	= "465--477",
-  series 	= lncs,
-  address       = "Heidelberg",
-  publisher 	= SV,
-  year 		= 2001,
-}
-
-@inproceedings{Smartcard:Andronick06,
-  author 	= "June Andronick",
-  title 	= "Formally Proved Anti-tearing Properties of Embedded {C} Code",
-  booktitle 	= "International Symposium on Leveraging Applications of 
-                   Formal Methods, Verification and Validation, {ISOLA}'06",
-  year		= "2006",
-}
-
-@inproceedings{Crypto:GregoireTW06,
-  title 	= "A Computational Approach to Pocklington Certificates in Type Theory",
-  author 	= "Benjamin Gr{\'e}goire and Laurent Th{\'e}ry and Benjamin Werner",
-  booktitle 	= "Functional and Logic Programming, 8th International Symposium, {FLOPS} 2006",
-  publisher 	= SV,
-  year 		= 2006,
-  volume 	= "3945",
-  editor 	= "Masami Hagiya and Philip Wadler",
-  pages 	= "97--113",
-  series 	= lncs,
-  address       = "Heidelberg",
-}
-
-@inproceedings{Pentium:Pratt95,
-  author 	= "Vaughan Pratt",
-  title 	= "Anatomy of the Pentium Bug",
-  booktitle 	= "TAPSOFT'95",
-  year 		= 1995,
-  series 	= lncs,
-  address       = "Heidelberg",
-  volume 	= "915",
-  pages 	= "97--107",
-  publisher 	= SV,
-}
-
-@book{		InnovatorDilemma:Christensen97,
-  author 	= "Clayton Christensen",
-  title 	= "The Innovator's Dilemma: When New Technologies Cause
-		 Great Firms to Fail",
-  publisher 	= "Harvard Business School Press",
-  month 	= jun,
-  year 		= 1997,
-}
-
-@book{		InnovatorSolution:Christensen03,
-  author 	= "Clayton Christensen and Michael Raynor",
-  title 	= "The Innovator's Solution: Creating and Sustaining
-		 Successful Growth",
-  publisher 	= "Harvard Business School Press",
-  month 	= sep,
-  year		= 2003,
-}
-
-@inproceedings{	Kepler:Hales04,
-  title 	= "Formalizing the Proof of the Kepler Conjecture",
-  author 	= "Thomas Hales",
-  booktitle 	= tphol04,
-  publisher 	= SV,
-  year 		= 2004,
-  volume 	= "3223",
-  editor 	= "Konrad Slind and Annette Bunker and Ganesh Gopalakrishnan",
-  pages 	= "117",
-  series 	= lncs,
-  address       = "Heidelberg",
-}
-
-@misc{		Hybrid:Tiwari04,
-  title 	= "Abstractions for Hybrid Systems",
-  author 	= "Ashish Tiwari",
-  year 		= 2004,
-  month 	= jun # "~16",
-}
-
-@article{	Challenge:Hoare03,
-  author 	= "Tony Hoare",
-  title 	= "The verifying compiler: A grand challenge for computing research",
-  journal 	= jacm,
-  volume 	= "50",
-  number	= "1",
-  year 		= 2003,
-  pages 	= "63--69",
-}
-
-@article{	Challenge:JonesOW06,
-  title 	= "Verified Software: A Grand Challenge",
-  author 	= "Cliff Jones and Peter O'Hearn and Jim Woodcock",
-  journal 	= "IEEE Computer",
-  year 		= 2006,
-  number 	= "4",
-  volume 	= "39",
-  pages 	= "93--95",
-}
-
-@manual{	CC98,
-  title 	= "Common Criteria for Information Technology Security Evaluation",
-  organization 	= "ISO/IEC Standard 15408",
-  edition 	= "version 2.0",
-  month 	= nov,
-  year 		= 1998,
-}
-
-@inproceedings{	Poly:BoldoM06,
-  author 	= "Sylvie Boldo and C\'esar Mu{\~{n}}oz",
-  title 	= "Provably Faithful Evaluation of Polynomials",
-  booktitle 	= "Proc. 21st ACM Symp. on Applied Computing",
-  pages 	= "1328--1332",
-  editor 	= "Hisham Haddad",
-  publisher	= ACMP,
-  year 		= 2006,
-}
-
-@inproceedings{	Poly:DaumasRT01,
-  title 	= "A Generic Library for Floating-Point Numbers and its Application to Exact Computing",
-  author 	= "Marc Daumas and Laurence Rideau and Laurent Th{\'e}ry",
-  booktitle 	= tphol01,
-  publisher 	= SV,
-  year 		= 2001,
-  volume 	= "2152",
-  editor 	= "Richard Boulton and Paul Jackson",
-  pages 	= "169--184",
-  series 	= lncs,
-  address       = "Heidelberg",
-}
+%%%%%%% Interoperability %%%%%%%
 
 @inproceedings{	Interop:Howe96,
   author 	= "Douglas Howe",
@@ -2621,6 +2377,198 @@ not-not translation:
   pages         = "279--294",
 }
 
+
+%%%%%%% (Programming) Languages %%%%%%%
+
+@book{		Fortran66,
+  author 	= "{ANSI}",
+  title 	= "Programming language, {Fortran}: {X3.9-1966}",
+  publisher 	= ANSI,
+  year 		= 1966,
+  series 	= "FIPS Publication",
+}
+
+@book{		C89,
+  author 	= "{ANCI}",
+  title 	= "Programming language, {C}: {X3.159-1989}",
+  number 	= "160",
+  publisher 	= ANSI,
+  year 		= 1989,
+  series 	= "FIPS Publication",
+}
+
+@book{		Lisp96,
+  author 	= "{ANSI}",
+  title 	= "Programming language, {Common LISP}: {X3.226-1994}",
+  publisher 	= ANSI,
+  year 		= 1996,
+  series 	= "FIPS Publication",
+}
+
+@manual{	Ocaml03,
+  title 	= "The {Objective Caml} system, Documentation and user's manual",
+  author 	= "Xavier Leroy and Damien Doligez and Jacques Garrigue and Didier R\'emy and J\'er\^ome Vouillon)",
+  edition 	= "release 3.07",
+  year 		= 2003,
+}
+
+@inproceedings{	Epigram:McBride04,
+  title 	= "Epigram: Practical Programming with Dependent Types",
+  author 	= "Conor McBride",
+  publisher 	= SV,
+  year 		= 2004,
+  volume 	= 3622,
+  booktitle 	= "Advanced Functional Programming",
+  editor 	= "Varmo Vene and Tarmo Uustalu",
+  pages 	= "130--170",
+  series 	= lncs,
+  address       = "Heidelberg",
+}
+
+@misc{          Relaxng:Clark01,
+  author        = "James Clark",
+  title         = "{RELAX} {NG} Specification",
+  howpublished  = "Organization for the Advancement of Structured Information Standards (OASIS), Committee Specification",
+  month         = dec,
+  year          = 2001,
+  URI =  	"http://www.oasis-open.org/committees/relax-ng/spec-20011203.html",
+}
+
+@book{          Relaxng:Vlist04,
+  author        = "van der Vlist, Eric",
+  title         = "{RELAX NG}",
+  year          = 2004,
+  publisher     = "O'Reilly \& Associates, Inc.",
+}
+
+@manual{        OpenMath:BuswellCCDGK04,
+  author        = "Stephen Buswell and Olga Caprotti and David Carlisle and Mike Dewar and Marc Ga{\"e}tano and Michael Kohlhase",
+  title         = "The {OpenMath} Standard",
+  organization  = "The {OpenMath} Society",
+  year          = 2004,
+  month         = jun,
+  edition       = "2.0",
+}
+
+
+%%%%%%% Agent and Pervasive Software %%%%%%%
+
+@article{	OAA:MartinCM99,
+  author	= "David Martin and Adam Cheyer and Douglas Moran",
+  title		= "The Open Agent Architecture: A Framework for Building Distributed Software
+     Systems",
+  journal	= "Applied Artificial Intelligence",
+  pages		= "91--128",
+  month		= jan,
+  number	= "1--2",
+  volume	= "13",
+  year		= 1999,
+}
+
+@inproceedings{	LBA:ArmandoZ00,
+  title 	= "Towards Interoperable Mechanized Reasoning Systems: the Logic Broker Architecture",
+  author 	= "Alessandro Armando and Daniele Zini",
+  booktitle 	= "{WOA} 2000: Dagli Oggetti agli Agenti. 1st {AI}*{IA}/{TABOO} Joint Workshop {"}From Objects to Agents{"}: Evolutive Trends of Software Systems",
+  publisher 	= "Pitagora Editrice Bologna",
+  year 		= 2000,
+  editor 	= "Antonio Corradi and Andrea Omicini and Agostino Poggi",
+  pages 	= "70--75",
+}
+
+@article{	ETI:SteffenMB97,
+  title 	= "The Electronic Tool Integration Platform: Concepts and Design",
+  author 	= "Bernhard Steffen and Tiziana Margaria and Volker Braun",
+  journal 	= sttt,
+  year 		= 1997,
+  number 	= "1-2",
+  volume 	= "1",
+  pages 	= "9--30",
+}
+
+@article{	PROSPER:DennisCNBSM03,
+  title 	= "The {PROSPER} toolkit",
+  author 	= "Louise Dennis and Graham Collins and Michael Norrish and Richard Boulton and Konrad Slind and Thomas Melham",
+  journal 	= sttt,
+  year 		= 2003,
+  number 	= "2",
+  volume 	= "4",
+  pages 	= "189--210",
+}
+
+@inproceedings{ Coordination:JouveLPCL08,
+    author      = "Wilfried Jouve and Julien Lancia and Nicolas Palix and Charles Consel and Julia Lawall",
+    title       = "High-level Programming Support for Robust Pervasive Computing Applications",
+    year        = 2008,
+    month       = mar,
+    booktitle   = "Proceedings of the 6th IEEE Conference on Pervasive Computing and Communications, TO APPEAR",
+    address     = "Hong Kong, China",
+}
+
+@inproceedings{ Coordination:ConselJLP07,
+    author      = "Charles Consel and Wilfried Jouve and Julien Lancia and Nicolas Palix",
+    title       = "Ontology-Directed Generation of Frameworks For Pervasive Service Development",
+    year        = 2007,
+    month       = mar,
+    booktitle   = "Proceedings of The 4th IEEE Workshop on Middleware Support for Pervasive Computing",
+    address     = "White Plains, NY, USA",
+}
+
+
+%%%%%%% Model Checking %%%%%%%
+
+@inproceedings{	ModelCheck:ClarkeGJLV00,
+  title 	= "Counterexample-Guided Abstraction Refinement",
+  author 	= "Edmund Clarke and Orna Grumberg and Somesh Jha and Yuan Lu and Helmut Veith",
+  booktitle 	= "Computer Aided Verification, 12th International Conference, {CAV} 2000",
+  publisher 	= SV,
+  year 		= 2000,
+  volume 	= "1855",
+  editor 	= "E. Allen Emerson and Aravinda Prasad Sistla",
+  pages 	= "154--169",
+  series 	= lncs,
+  address       = "Heidelberg",
+}
+
+@inproceedings{	ModelCheck:SaidiS99,
+  title 	= "Abstract and Model Check While You Prove",
+  author 	= "Hassen Sa{\"i}di and Natarajan Shankar",
+  booktitle 	= "Computer Aided Verification, 11th International Conference, {CAV} '99",
+  publisher 	= SV,
+  year 		= 1999,
+  volume 	= "1633",
+  editor 	= "Nicolas Halbwachs and Doron Peled",
+  pages 	= "443--454",
+  series 	= lncs,
+  address       = "Heidelberg",
+}
+
+@inproceedings{ conf/lfm/BensalemEA00,
+    author      = "Saddek Bensalem and Vijay Ganesh and Yassine Lakhnech and  C{\'e}sar Mu{\~n}oz and Sam Owre and Harald Rue\ss and John Rushby and Vlad Rusu and Hassen Sa{\"i}di and Natarajan Shankar and Eli Singerman and Ashish Tiwari",
+    title       = "An Overview of {SAL}",
+    booktitle   = "{LFM} 2000: Fifth {NASA} Langley Formal Methods Workshop",
+    year        = 2000,
+    editor      = "{C.} Michael Holloway",
+    pages       = "187--196",
+    address     = "Hampton, {VA}",
+    month       = jun,
+    organization = "{NASA} Langley Research Center",
+    url         = "http://www.csl.sri.com/papers/lfm2000/"
+}
+
+@inproceedings{ yu97implementing,
+  author 	= "Shenwei Yu and Zhaohui Luo",
+  title 	= "Implementing a Model Checker for {LEGO}",
+  booktitle 	= "{FME}'97: Industrial Applications and Strengthened Foundations of Formal Methods",
+  volume 	= "1313",
+  publisher 	= SV,
+  editor 	= "John Fitzgerald and Cliff B. Jones and Peter Lucas",
+  pages 	= "442--458",
+  year 	= 1997,
+}
+
+
+%%%%%%% Provenance %%%%%%%
+
 @inproceedings{	Provenance:BunemanKT00,
   author 	= "Peter Buneman and Sanjeev Khanna and Wang Chiew Tan",
   title 	= "Data Provenance: Some Basic Issues",
@@ -2649,55 +2597,174 @@ not-not translation:
   year 		= 2005,
 }
 
-@inproceedings{ Coordination:JouveLPCL08,
-    author      = "Wilfried Jouve and Julien Lancia and Nicolas Palix and Charles Consel and Julia Lawall",
-    title       = "High-level Programming Support for Robust Pervasive Computing Applications",
-    year        = 2008,
-    month       = mar,
-    booktitle   = "Proceedings of the 6th IEEE Conference on Pervasive Computing and Communications, TO APPEAR",
-    address     = "Hong Kong, China",
+
+%%%%%%% Formal Methods Applications %%%%%%%
+
+@article{	Bio:DanosL04,
+  title 	= "Formal Molecular Biology",
+  author 	= "Vincent Danos and Cosimo Laneve",
+  journal 	= tcs,
+  year 		= 2004,
+  number 	= "1",
+  volume 	= "325",
+  pages 	= "69--110",
 }
 
-@inproceedings{ Coordination:ConselJLP07,
-    author      = "Charles Consel and Wilfried Jouve and Julien Lancia and Nicolas Palix",
-    title       = "Ontology-Directed Generation of Frameworks For Pervasive Service Development",
-    year        = 2007,
-    month       = mar,
-    booktitle   = "Proceedings of The 4th IEEE Workshop on Middleware Support for Pervasive Computing",
-    address     = "White Plains, NY, USA",
+@article{	Bio:EkerKLLT02,
+  title 	= "Pathway Logic: Executable Models of Biological Networks",
+  author 	= "Steven Eker and Merrill Knapp and Keith Laderoute and Patrick Lincoln and Carolyn Talcott",
+  journal 	= "Electronic Notes in Theoretical Computer Science",
+  year 		= 2002,
+  volume 	= "71",
 }
 
-@misc{          Relaxng:Clark01,
-  author        = "James Clark",
-  title         = "{RELAX} {NG} Specification",
-  howpublished  = "Organization for the Advancement of Structured Information Standards (OASIS), Committee Specification",
-  month         = dec,
-  year          = 2001,
-  URI =  	"http://www.oasis-open.org/committees/relax-ng/spec-20011203.html",
+@inproceedings{	Space:GluckH02,
+  author 	= "Peter Gluck and Gerard Holzmann",
+  title 	= "Using {Spin} Model Checking for Flight Software Verification",
+  booktitle 	= "Proc. of the 2002 Aerospace Conference",
+  publisher 	= IEEECSP,
+  year 		= 2002,
+  month 	= mar,
 }
 
-@book{          Relaxng:Vlist04,
-  author        = "van der Vlist, Eric",
-  title         = "{RELAX NG}",
-  year          = 2004,
-  publisher     = "O'Reilly \& Associates, Inc.",
+@article{ 	Aero:LaurentMW01,
+  author 	= "Odile Laurent and Pierre Michel and Virginie Wiels",
+  title 	= "Using Formal Verification Techniques to Reduce Simulation and Test Effort",
+  journal 	= "Proceedings of FME 2001",
+  volume 	= "2021",
+  pages 	= "465--477",
+  series 	= lncs,
+  address       = "Heidelberg",
+  publisher 	= SV,
+  year 		= 2001,
 }
 
-@manual{        OpenMath:BuswellCCDGK04,
-  author        = "Stephen Buswell and Olga Caprotti and David Carlisle and Mike Dewar and Marc Ga{\"e}tano and Michael Kohlhase",
-  title         = "The {OpenMath} Standard",
-  organization  = "The {OpenMath} Society",
-  year          = 2004,
-  month         = jun,
-  edition       = "2.0",
+@inproceedings{Smartcard:Andronick06,
+  author 	= "June Andronick",
+  title 	= "Formally Proved Anti-tearing Properties of Embedded {C} Code",
+  booktitle 	= "International Symposium on Leveraging Applications of 
+                   Formal Methods, Verification and Validation, {ISOLA}'06",
+  year		= "2006",
 }
 
-@inproceedings{ CFM:Appel08,
-  author        = "Andrew Appel",
-  title         = "Foundational High-level Static Analysis",
-  year          = "2008",
-  booktitle     = "Exploiting Concurrency Efficiently and Correctly ($\text{(EC)}^2$) Workshop",
-  publisher     = "Informal Proceedings",
+@inproceedings{Crypto:GregoireTW06,
+  title 	= "A Computational Approach to Pocklington Certificates in Type Theory",
+  author 	= "Benjamin Gr{\'e}goire and Laurent Th{\'e}ry and Benjamin Werner",
+  booktitle 	= "Functional and Logic Programming, 8th International Symposium, {FLOPS} 2006",
+  publisher 	= SV,
+  year 		= 2006,
+  volume 	= "3945",
+  editor 	= "Masami Hagiya and Philip Wadler",
+  pages 	= "97--113",
+  series 	= lncs,
+  address       = "Heidelberg",
+}
+
+@inproceedings{Pentium:Pratt95,
+  author 	= "Vaughan Pratt",
+  title 	= "Anatomy of the Pentium Bug",
+  booktitle 	= "TAPSOFT'95",
+  year 		= 1995,
+  series 	= lncs,
+  address       = "Heidelberg",
+  volume 	= "915",
+  pages 	= "97--107",
+  publisher 	= SV,
+}
+
+@inproceedings{	Kepler:Hales04,
+  title 	= "Formalizing the Proof of the Kepler Conjecture",
+  author 	= "Thomas Hales",
+  booktitle 	= tphol04,
+  publisher 	= SV,
+  year 		= 2004,
+  volume 	= "3223",
+  editor 	= "Konrad Slind and Annette Bunker and Ganesh Gopalakrishnan",
+  pages 	= "117",
+  series 	= lncs,
+  address       = "Heidelberg",
+}
+
+@article{	Challenge:Hoare03,
+  author 	= "Tony Hoare",
+  title 	= "The verifying compiler: A grand challenge for computing research",
+  journal 	= jacm,
+  volume 	= "50",
+  number	= "1",
+  year 		= 2003,
+  pages 	= "63--69",
+}
+
+@article{	Challenge:JonesOW06,
+  title 	= "Verified Software: A Grand Challenge",
+  author 	= "Cliff Jones and Peter O'Hearn and Jim Woodcock",
+  journal 	= "IEEE Computer",
+  year 		= 2006,
+  number 	= "4",
+  volume 	= "39",
+  pages 	= "93--95",
+}
+
+@manual{	CC98,
+  title 	= "Common Criteria for Information Technology Security Evaluation",
+  organization 	= "ISO/IEC Standard 15408",
+  edition 	= "version 2.0",
+  month 	= nov,
+  year 		= 1998,
+}
+
+
+%%%%%%% LaTeX %%%%%%%
+
+@manual{	LaTeX:symb,
+  title 	= "The Great, Big List of \LaTeX\ Symbols",
+  author 	= "David Carlisle and Scott Pakin and Alexander Holt",
+  month 	= feb,
+  year 		= 2001,
+}
+
+@manual{	LaTeX:intro,
+  title 	= "The Not So Short Introduction to \LaTeX2e",
+  author 	= "Tobias Oetiker",
+  month 	= jan,
+  year 		= 1999,
+}
+
+
+%%%%%%% Sundries %%%%%%%
+
+@manual{	Tactics:dod01,
+  title		= "Dictionary of Military and Associated Terms",
+  organization	= "United States Departement of Defense",
+  month		= apr,
+  year		= 2001,
+  note		= "Joint Publication 1-02",
+}
+
+@book{		Tactics:Certeau84,
+  title		= "The Practice of Everyday Life",
+  author	= "Michel de Certeau",
+  publisher	= UCP,
+  note		= "translation by Steven Rendall",
+  year		= 1948
+}
+
+@book{		InnovatorDilemma:Christensen97,
+  author 	= "Clayton Christensen",
+  title 	= "The Innovator's Dilemma: When New Technologies Cause
+		 Great Firms to Fail",
+  publisher 	= "Harvard Business School Press",
+  month 	= jun,
+  year 		= 1997,
+}
+
+@book{		InnovatorSolution:Christensen03,
+  author 	= "Clayton Christensen and Michael Raynor",
+  title 	= "The Innovator's Solution: Creating and Sustaining
+		 Successful Growth",
+  publisher 	= "Harvard Business School Press",
+  month 	= sep,
+  year		= 2003,
 }
 
 % vim: set sw=2 : 
