@@ -1,247 +1,300 @@
-% General bib file. 
+% General bib file.
 % Florent Kirchner.
-
+%
+% Syntax close to DBLP
+%
 % Macros and common definitions are in
 % \include{abbrevs.bib}
 %
-% Conferences and events are in
+% Crossref conferences and events are in
 % \include{events.bib}
 %
-% Install (symlink) these files in 
+% Install (symlink) these files in
 %   /usr/share/texmf-texlive/bibtex/bib/users
-% Then run 
+% Then run
 %   sudo texhash /usr/share/texmf-texlive
 
 
-%%%%%%% F %%%%%%%
+%%%%%% W %%%%%%%
 
-@techreport{    CacheraJJK:RR11,
-  title         = "Fast inference of polynomial invariants for imperative programs",
-  author        = "David Cachera and Thomas Jensen and Arnaud Jobin and Florent Kirchner",
-  type          = "Research Report",
-  institution   = "INRIA",
-  number        = "{RR}-7627",
-  year          = 2011,
+@inproceedings{conf/sefm/CuoqKKPSY12,
+  author    = {Pascal Cuoq and
+               Florent Kirchner and
+               Nikolai Kosmatov and
+               Virgile Prevosto and
+               Julien Signoles and
+               Boris Yakobowski},
+  title     = {Frama-C - A Software Analysis Perspective},
+  booktitle = {SEFM},
+  year      = {2012},
+  pages     = {233-247},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-33826-7_16},
+  crossref  = {conf/sefm/2012},
+  abstract  = {Frama-C is a source code analysis platform that aims at conducting verification of industrial-size C programs. It provides its users with a collection of plug-ins that perform static analysis, deductive verification, and testing, for safety- and security-critical software. },
 }
 
-@inproceedings{	JensenKP:Esop11,
-  author	= "Thomas Jensen and Florent Kirchner and David Pichardie",
-  title		= "Secure the Clones: Static Enforcement of Secure Object Copying",
-  booktitle     = "Programming Languages and Systems",
-  editor        = "Gilles Barthes",
-  publisher     = SV,
-  series        = lncs,
-  address       = "Heidelberg",
-  pages         = "317--337",
-  volume        = 6602,
-  year		= 2011,
+@inproceedings{conf/npic/CuoqHKLTY,
+  author    = {Pascal Cuoq and
+               Philippe Hilsenkopf and
+               Florent Kirchner and
+               S\'{e}bastien Labb\'{e} and
+               Nguyen Thuy and
+               Boris Yakobowski},
+  title     = {Formal verification of software important to safety using the {Frama-C} tool suite},
+  booktitle = {NPIC\&HMIT},
+  booktitle = {Proceedings of the 8th International Topical Meeting on Nuclear Plant Instrumentation, Control and Human Machine Interface Technologies},
+  year      = {2012},
 }
 
-@misc{          KirchnerP:lfsa10,
-  author        = "Florent Kirchner and Grant Passmore",
-  title         = "Thinking Outside the (Arithmetic) Box: Certifying {RAHD} Computations",
-  year          = 2010,
-  note          = "Short paper, Logics for System Analysis",
+@inproceedings{conf/cade/CuoqKY12,
+  author    = {Pascal Cuoq and
+               Florent Kirchner and
+               Boris Yakobowski},
+  title     = {Benchmarking Static Analyzers},
+  booktitle = {COMPARE},
+  year      = {2012},
+  pages     = {32-35},
+  ee        = {http://ceur-ws.org/Vol-873/papers/paper_5.pdf},
+  crossref  = {conf/cade/2012compare},
+  abstract  = {Static analysis benchmarks matter.},
 }
 
-@article{	fk:proofMonad10,
-  author	= "Florent Kirchner and C\'esar Mu{\~n}oz",
-  title		= "The Proof Monad",
-  journal       = "Journal of Logic and Algebraic Programming",
-  volume        = "79",
-  number        = "3--5",
-  pages         = "264--277",
-  year		= 2010,
+@manual{man/fc/CorrensonEtAl12,
+  author    = {Lo{\"{i}}c Correnson et al.},
+  title     = {Frama-C User Manual},
+  ee        = {http://frama-c.com/download/frama-c-user-manual.pdf},
+  year      = {2012},
 }
 
-@inproceedings{ fk:strategies10,
-  author	= "Claude Kirchner and Florent Kirchner and H\'{e}l\`{e}ne Kirchner",
-  title		= "Constraint Based Strategies",
-  editor        = "Santiago Escobar",
-  booktitle	= "Functional and Constraint Logic Programming, WFLP 2009, Revised Selected Papers",
-  publisher     = SV,
-  series        = lncs,
-  address       = "Heidelberg",
-  volume        = "5979",
-  pages         = "13--26",
-  year		= 2010,
+@inproceedings{conf/sas/CacheraJJK12,
+  author    = {David Cachera and
+               Thomas P. Jensen and
+               Arnaud Jobin and
+               Florent Kirchner},
+  title     = {Inference of Polynomial Invariants for Imperative Programs:
+               A Farewell to Gr{\"o}bner Bases},
+  booktitle = {SAS},
+  year      = {2012},
+  pages     = {58-74},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-33125-1_7},
+  crossref  = {conf/sas/2012},
+  abstract  = {We propose a static analysis for computing polynomial invariants for imperative programs. The analysis is derived from an abstract interpretation of a backwards semantics, and computes pre-conditions for equalities like g = 0 to hold at the end of execution.},
 }
 
-@inproceedings{	fk:forensic09,
-  author	= "Ashish Gehani and Florent Kirchner and Natarajan Shankar",
-  title		= "System Support for Forensic Evidence",
-  booktitle     = "Advances in Digital Forensics V",
-  series        = "IFIP Advances in Information and Communication Technology",
-  publisher     = SV,
-  volume        = "306",
-  year		= 2009,
-}
-%  note	        = "Fifth Annual IFIP International Conference on Digital Forensics",
 
-@manual{        fk:etb,
-  author        = "The {CSL} Formal Methods and Dependable Systems Group",
-  title         = "A Prototype Evidential Tool Bus",
-  year          = 2008,
+@techreport{rr/inria/CacheraJJK:RR11,
+  title     = "Fast inference of polynomial invariants for imperative programs",
+  author    = "David Cachera and Thomas Jensen and Arnaud Jobin and Florent Kirchner",
+  type      = "Rapport de Recherche",
+  institution = "Inria",
+  number    = "{RR}-7627",
+  year      = {2011},
 }
 
-@inproceedings{	fk:festschrift08,
-  author	= "Claude Kirchner and Florent Kirchner and H\'{e}l\`{e}ne Kirchner",
-  title		= "Strategic Computations and Deductions",
-  booktitle	= "Reasoning in Simple Type Theory",
-  publisher     = "College Publications",
-  series        = "Mathematical Logic and Foundations",
-  volume        = "17",
-  year		= 2008,
+@article{journals:JensenKP:CoRR12,
+  author    = {Thomas Jensen and
+               Florent Kirchner and
+               David Pichardie},
+  title     = {Secure the Clones},
+  journal   = {Logical Methods in Computer Science},
+  volume    = {8},
+  number    = {2},
+  year      = {2012},
+  ee        = {http://www.lmcs-online.org/ojs/viewarticle.php?id=1012},
+  abstract  = {Exchanging mutable data objects with untrusted code is a delicate matter because of the risk of creating a data space that is accessible by an attacker.},
 }
 
-@phdthesis{ 	fk:phd07,
-  author	= "Florent Kirchner",
-  title		= "Interoperable proof systems",
-  year		= 2007,
-  school	= "\'Ecole Polytechnique",
+@inproceedings{conf/esop/JensenKP11,
+  author    = {Thomas P. Jensen and
+               Florent Kirchner and
+               David Pichardie},
+  title     = {Secure the Clones - Static Enforcement of Policies for Secure
+               Object Copying},
+  booktitle = {ESOP},
+  year      = {2011},
+  pages     = {317-337},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-19718-5_17},
+  crossref  = {conf/esop/2011},
 }
 
-@inproceedings{	fk:rule06,
-  author	= "Florent Kirchner and Fran\c{c}ois-R\'egis Sinot",
-  title		= "Rule-based Operational Semantics for an Imperative Language.",
-  booktitle	= "Proc. 7th Int. Workshop on Rule Based Programming",
-  series 	= entcs,
-  address       = "Amsterdam",
-  publisher	= ES,
-  volume	= "174",
-  pages		= "35--47",
-  year		= 2007
-}
-  %http://dx.doi.org/10.1016/j.entcs.2006.10.023
-
-@inproceedings{	fk:strategies06b,
-  author	= "Florent Kirchner and C\'esar Mu{\~n}oz",
-  title		= "{PVS\#}: Streamlined Tacticals for {PVS}",
-  booktitle	= "Workshop on Strategies in Automated Deduction",
-  series	= entcs,
-  address       = "Amsterdam",
-  publisher	= ES,
-  year		= 2007,
-  volume	= "174/11",
-  pages		= "47--58",
-}
-  booktitle	= "Proc. 6th Int. Workshop on Strategies in Automated Deduction",
-
-@inproceedings{	fk:strategies06,
-  author	= "Florent Kirchner and C\'esar Mu{\~n}oz",
-  title		= "{PVS\#}: Streamlined Tacticals for {PVS}",
-  booktitle	= "Workshop on Strategies in Automated Deduction",
-  series	= entcs,
-  address       = "Amsterdam",
-  publisher	= ES,
-  year		= 2007,
-  volume	= "174/11",
-  pages		= "47--58",
-}
-  booktitle	= "Proc. 6th Int. Workshop on Strategies in Automated Deduction",
-
-@inproceedings{	fk:classes07,
-  author	= "Florent Kirchner",
-  title		= "A Finite First-order Theory of Classes",
-  booktitle	= "Types for Proofs and Programs, Revised Selected Papers",
-  publisher	= SV,
-  pages		= "188--202",
-  volume	= "4502",
-  series	= lncs,
-  address       = "Heidelberg",
-  year		= 2006
+@misc{workshop/lfsa/KirchnerP10,
+  author    = {Florent Kirchner and
+               Grant Passmore},
+  title     = {Thinking Outside the (Arithmetic) Box: Certifying {RAHD} Computations},
+  year      = {2010},
+  note      = {Short paper at Logics for System Analysis},
+  abstract  = {We present ongoing work on an architecture that enables the skeptical integration of RAHD into general-purpose proof assistants.},
 }
 
-@manual{	fk:fsp,
-  author	= "Florent Kirchner and Claudio {Sacerdoti Coen}",
-  title		= "The \textsf{Fellowship} proof manager",
-  howpublished	= "\url{www.lix.polytechnique.fr/Labo/Florent.Kirchner/fellowship/}",
-  year		= 2007
+@article{journals/jlp/KirchnerM10,
+  author    = {Florent Kirchner and
+               C{\'e}sar Mu{\~n}oz},
+  title     = {The proof monad},
+  journal   = {J. Log. Algebr. Program.},
+  volume    = {79},
+  number    = {3-5},
+  year      = {2010},
+  pages     = {264-277},
+  ee        = {http://dx.doi.org/10.1016/j.jlap.2010.03.002},
+  abstract  = {This article illustrates how proof monads can be used to implement semantically clean control structure mechanisms in actual proof languages.},
 }
 
-@manual{	fk:manfsp,
-  author 	= "Florent Kirchner",
-  title 	= "Fellowship: who needs a manual anyway?",
-  year 		= 2005,
-}
-  %url 		= "www.lix.polytechnique.fr/Labo/Florent.Kirchner/fellowship/doc/documentation.ps"
-
-@inproceedings{	fk:sbos05,
-  author 	= "Florent Kirchner",
-  title 	= "Store-based Operational Semantics",
-  year 		= 2005,
-  publisher 	= INRIA,
-  booktitle 	= "Seizi\`emes Journ\'ees Francophones des Langages Applicatifs"
+@inproceedings{conf/wflp/KirchnerKK09,
+  author    = {Claude Kirchner and
+               Florent Kirchner and
+               H{\'e}l{\`e}ne Kirchner},
+  title     = {Constraint Based Strategies},
+  booktitle = {WFLP},
+  year      = {2009},
+  pages     = {13-26},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-11999-6_2},
+  crossref  = {conf/wflp/2009},
 }
 
-@misc{		fk:cfaq04,
-  author 	= "Hugo Herbelin and Florent Kirchner and Benjamin Monate and Julien Narboux",
-  title 	= "Coq Version 8.0 for the Clueless (174 Hints), \url{http://coq.inria.fr/doc/faq.html}",
-  year 		= 2004,
+@inproceedings{conf/ifip11-9/GehaniKS09,
+  author    = {Ashish Gehani and
+               Florent Kirchner and
+               Natarajan Shankar},
+  title     = {System Support for Forensic Inference},
+  booktitle = {IFIP Int. Conf. Digital Forensics},
+  year      = {2009},
+  pages     = {301-316},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-04155-6_23},
+  crossref  = {conf/ifip11-9/2009},
 }
 
-@techreport{	fk:pvss04,
-  author 	= "Florent Kirchner",
-  title 	= "{PVS}\#: A Streamlined Tactical Language",
-  year 		= 2005,
-  institution 	= "National Institute of Aerospace",
-  note		= "Subsumed by~\cite{fk:strategies06}"
+@manual{man/etb/Kirchner08,
+  author    = "The {CSL} Formal Methods and Dependable Systems Group",
+  title     = {A Prototype {Evidential Tool Bus}},
+  year      = {2008},
 }
 
-@manual{	fk:practicals05,
-  author	= "Florent Kirchner",
-  title 	= "Programmation Tacticals",
-  year  	= 2005,
-}
-  %url 		= "research.nianet.org/fm-at-nia/Practicals/"
-
-@mastersthesis{	fk:dea03,
-  author	= "Florent Kirchner",
-  title		= "Towards a Common Tactical Language : The Case of {Coq} and {PVS}",
-  school	= "{DEA} Programmation : S{\'e}mantique, Preuves et Langages",
-  year		= 2003
-}
-
-@inproceedings{	fk:strata03,
-  author	= "Florent Kirchner",
-  editor	= "Mila Archer et al.",
-  title		= "{Coq} Tacticals and {PVS} Strategies: A Small-Step Semantics",
-  pages		= "69--83",
-  booktitle	= "Design and Application of Strategies/Tactics in Higher Order Logics",
-  series	= "NASA Conference Proceedings",
-  volume	= "212448",
-  publisher	= NASA,
-  month		= sep,
-  year		= 2003
+@inproceedings{journals/cp/KirchnerKK08,
+  author    = {Claude Kirchner and
+               Florent Kirchner and
+               H\'{e}l\`{e}ne Kirchner},
+  title     = {Strategic Computations and Deductions},
+  booktitle = {Reasoning in Simple Type Theory},
+  publisher = {College Publications},
+  series    = {Mathematical Logic and Foundations},
+  volume    = {17},
+  pages     = {339-364},
+  year      = {2008},
 }
 
-@techreport{	fk:rr3d02,
-  author 	= "Alfons Geser and C{\'e}sar Mu{\~{n}}oz and Gilles Dowek and Florent Kirchner",
-  title 	= "Air Traffic Conflict Resolution and Recovery",
-  institution 	= "ICASE-NASA Langley",
-  number 	= "Report No. 2002-12 NASA/CR-2002-211637",
-  month 	= may,
-  year 		= 2002
+@phdthesis{phd/Kirchner07,
+  author    = {Florent Kirchner},
+  title     = {Interoperable Proof Systems},
+  year      = {2007},
+  school    = {{\'Ecole Polytechnique}},
 }
 
-@techreport{	fk:rr3d02b,
-  author 	= "Alfons Geser and C{\'e}sar Mu{\~{n}}oz and Gilles Dowek and Florent Kirchner",
-  title 	= "Air Traffic Conflict Resolution and Recovery",
-  institution 	= "ICASE-NASA Langley",
-  number 	= "Report No. 2002-12 NASA/CR-2002-211637",
-  month 	= may,
-  year 		= 2002
+@article{journals/entcs/KirchnerS07,
+  author    = {Florent Kirchner and
+               Fran\c{c}ois-R{\'e}gis Sinot},
+  title     = {Rule-Based Operational Semantics for an Imperative Language},
+  journal   = {Electr. Notes Theor. Comput. Sci.},
+  volume    = {174},
+  number    = {1},
+  year      = {2007},
+  pages     = {35-47},
+  ee        = {http://dx.doi.org/10.1016/j.entcs.2006.10.023},
 }
 
-@misc{		fk:optimalr3d01,
-  author	= "Florent Kirchner",
-  title		= "Optimal unconstrained solution to conflict resolution in 3-{D} aispace",
-  institution	= "ICASE-NASA Langley",
-  note		= "Internship report",
-  month		= aug,
-  year		= 2001
+@article{journals/entcs/KirchnerM07,
+  author    = {Florent Kirchner and
+               C{\'e}sar Mu{\~n}oz},
+  title     = {PVS\#: Streamlined Tacticals for PVS},
+  journal   = {Electr. Notes Theor. Comput. Sci.},
+  volume    = {174},
+  number    = {11},
+  year      = {2007},
+  pages     = {47-58},
+  ee        = {http://dx.doi.org/10.1016/j.entcs.2006.10.057},
+}
+
+@inproceedings{conf/types/Kirchner06,
+  author    = {Florent Kirchner},
+  title     = {A Finite First-Order Theory of Classes},
+  booktitle = {TYPES},
+  year      = {2006},
+  pages     = {188-202},
+  ee        = {http://dx.doi.org/10.1007/978-3-540-74464-1_13},
+  crossref  = {conf/types/2006},
+}
+
+@manual{man/fsp/Kirchner07,
+  author    = {Florent Kirchner and
+               Claudio {Sacerdoti Coen}},
+  title     = {The Fellowship proof manager},
+  ee        = {http://www.lix.polytechnique.fr/Labo/Florent.Kirchner/fellowship},
+  year      = {2007},
+}
+
+@inproceedings{workshop/jfla/Kirchner05,
+  author    = {Florent Kirchner},
+  title     = {Store-based Operational Semantics},
+  year      = {2005},
+  publisher = {INRIA},
+  booktitle = {Seizi\`emes Journ\'ees Francophones des Langages Applicatifs},
+}
+
+@manual{man/coq/HerbelinKMN04,
+  author    = {Hugo Herbelin and
+               Florent Kirchner and
+               Benjamin Monate and
+               Julien Narboux},
+  title     = {Coq Version 8.0 for the Clueless (174 Hints)},
+  ee        = {http://coq.inria.fr/doc/faq.html},
+  year      = {2004},
+}
+
+@manual{man/practicals/Kirchner05,
+  author    = {Florent Kirchner},
+  title     = {Programmation Tacticals},
+  year      = {2005},
+  ee        = {http://research.nianet.org/fm-at-nia/Practicals/},
+}
+
+@mastersthesis{masters/Kirchner03,
+  author    = {Florent Kirchner},
+  title     = {Towards a Common Tactical Language : The Case of {Coq} and {PVS}},
+  school    = {{DEA} Programmation : S{\'e}mantique, Preuves et Langages},
+  year      = {2003},
+}
+
+@inproceedings{workshop/strata/Kirchner03,
+  author    = {Florent Kirchner},
+  editor    = {Mila Archer et al.},
+  title     = {{Coq} Tacticals and {PVS} Strategies: A Small-Step Semantics},
+  pages     = {69-83},
+  booktitle = {Design and Application of Strategies/Tactics in Higher Order Logics},
+  series    = {NASA Conference Proceedings},
+  volume    = {212448},
+  publisher = {NASA},
+  year      = {2003},
+}
+
+@techreport{rr/nasa/fk:rr3d02,
+  author    = {Alfons Geser and
+               C{\'e}sar Mu{\~{n}}oz and
+               Gilles Dowek and
+               Florent Kirchner},
+  title     = {Air Traffic Conflict Resolution and Recovery},
+  institution = {ICASE-NASA Langley},
+  number    = {Report No. 2002-12 NASA/CR-2002-211637},
+  year      = {2002},
+}
+
+@misc{Kirchner01,
+  author    = {Florent Kirchner},
+  title     = {Optimal unconstrained solution to conflict resolution in 3-{D} airspace},
+  institution = {ICASE-NASA Langley},
+  note      = {Internship report},
+  year      = {2001},
   }
 
+%%%%%%% /W %%%%%%%
 %%%%%%% Semantics %%%%%%%
 
 @misc{		Sem:cours02,
@@ -275,7 +328,6 @@
   volume  	= "1869",
   year 		= 2000,
   isbn 		= "3-540-67863-8",
-  bibsource 	= "{DBLP}, dblp.uni-trier.de"
 }
 
 @inproceedings{	Sem:DuboisB01,
