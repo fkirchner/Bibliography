@@ -17,6 +17,43 @@
 
 %%%%%% W %%%%%%%
 
+@inproceedings{KirchnerSFDMPV16,
+    author={Kirchner, Florent and Sadmi, Franck and Flanc, Sébastien and Duboc, Lucas and Marteau, Hélène and Prevosto, Virgile and Vedrine, Franck},
+    title={Safer Marine and Offshore Software with Formal-Verification-Based Guidelines},
+    year={2016},
+    booktitle={Embedded real time software and systems},
+}
+
+@article{KirchnerKPSY15,
+  author={Kirchner, Florent and Kosmatov, Nikolai and Prevosto, Virgile and Signoles, Julien and Yakobowski, Boris},
+  title={Frama-{C}: A software analysis perspective},
+  journal={Formal Aspects of Computing},
+  url={http://dx.doi.org/10.1007/s00165-014-0326-7},
+  publisher={Springer London},
+  pages={1-37},
+  year={2015},
+  abstract={Frama-C is a source code analysis platform that aims at conducting verification of industrial-size C programs. It provides its users with a collection of plug-ins that perform static analysis, deductive verification, and testing, for safety- and security-critical software. Collaborative verification across cooperating plug-ins is enabled by their integration on top of a shared kernel and datastructures, and their compliance to a common specification language. This foundational article presents a consolidated view of the platform, its main and composite analyses, and some of its industrial achievements.}
+}
+
+
+@article{Cachera201489,
+  title = "Inference of polynomial invariants for imperative programs: A farewell to Gröbner bases ",
+  journal = "Science of Computer Programming ",
+  volume = "93, Part B",
+  number = "0",
+  pages = "89-109",
+  year = "2014",
+  note = "Special Issue on Invariant Generation ",
+  issn = "0167-6423",
+  doi = "http://dx.doi.org/10.1016/j.scico.2014.02.028",
+  url = "http://www.sciencedirect.com/science/article/pii/S0167642314000951",
+  author = "David Cachera and Thomas Jensen and Arnaud Jobin and Florent Kirchner",
+  keywords = "Polynomial invariants",
+  keywords = "Static analysis",
+  keywords = "Abstract interpretation ",
+  abstract = "Abstract The article presents a static analysis for computing polynomial invariants for imperative programs. The analysis is derived from an abstract interpretation of a backwards semantics, and computes preconditions for equalities of the form g = 0 to hold at the end of execution. A distinguishing feature of the technique is that it computes polynomial loop invariants without resorting to Gröbner base computations. The analysis uses remainder computations over parameterized polynomials in order to handle conditionals and loops efficiently. The algorithm can analyze and find a large majority of loop invariants reported previously in the literature, and executes significantly faster than implementations using Gröbner bases. "
+}
+
 @inproceedings{conf/nfm/GoodloeMKC13,
   author    = {Alwyn Goodloe and
                C{\'e}sar A. Mu{\~n}oz and
@@ -39,7 +76,7 @@
                Virgile Prevosto and
                Julien Signoles and
                Boris Yakobowski},
-  title     = {Frama-C - A Software Analysis Perspective},
+  title     = {{Frama-C} -- {A} Software Analysis Perspective},
   booktitle = {SEFM},
   year      = {2012},
   pages     = {233-247},
